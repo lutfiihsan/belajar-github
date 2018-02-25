@@ -4,4 +4,14 @@ Cara menggunakan github
    * daftar sesuai petunjuk, masukkan data anda
 
 2. membuat repostiory
-   * git init belajar-github 
+   * git init belajar-github
+
+3. menambahkan file
+   * git status
+   * git add .
+   * git commit -m "menambahkan file ke github"
+
+4. upload file ke github
+   * git config --global user.email "emailanda"
+   * git config --global user.name "useranda"
+   * git push 
