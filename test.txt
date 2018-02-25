@@ -1,1 +1,3 @@
-test upload ke github
+Cara menggunakan github
+
+1. daftar ke github.com 
