@@ -1,3 +1,7 @@
 Cara menggunakan github
 
-1. daftar ke github.com 
+1. daftar ke github.com
+   * daftar sesuai petunjuk, masukkan data anda
+
+2. membuat repostiory
+   * git init belajar-github 
