@@ -3,15 +3,57 @@ Cara menggunakan github
 1. daftar ke github.com
    * daftar sesuai petunjuk, masukkan data anda
 
+2. login ke github
+   * git config --global user.email "emailanda"
+   * git config --global user.name "useranda"
+
 2. membuat repostiory
    * git init belajar-github
 
-3. menambahkan file
+3. Melihat status working folder
    * git status
+
+4. Menyimpan perubahan ke repository
    * git add .
    * git commit -m "menambahkan file ke github"
 
-4. upload file ke github
-   * git config --global user.email "emailanda"
-   * git config --global user.name "useranda"
-   * git push 
+5. Melihat history perubahan
+   * git log
+   * git log --oneline
+
+6. Melihat perbedaan antar versi
+   * git diff commitId1..commitId2
+
+7. Membatalkan commit
+  a. satu kondisi
+     Misal kita melalukan perubahan file di windows (working area)
+     lalu kita sudah dimasukkan ke stage (belum dicommit)
+     jika ingin membatalkan perubahan ke stage kita lalukan
+     git reset
+
+  b. dua kondisi atau lebih
+     Misal kita melalukan perubahan file di windows (working area)
+     lalu kita sudah dimasukkan ke stage (belum dicommit), 
+     lalu kita melakukan perubahan lagi (working area) tetapi belum masuk stage
+     - jika ingin membatalkan perubahan ke working area
+       kita lalukan :
+       # git reset
+
+     - jika ingin memasukan semuanya ke stage
+       kita lalukan :
+       # git add . 
+
+     - jika ingin memasukkan beberapa baris perubahan ke stage
+       kita lalukan :
+       # git add -p
+       # ketik s (split) -> enter
+       # pilih beberapa perubahan yang mau anda pilih
+       # ketik y -> enter dan ketik n -> enter jika ingin mengabaikan pilihan perubahan
+
+8. Melihat perubahan antar stage
+   * git diff --staged
+
+9. Mendaftarkan file untuk pengecualian tidak di commit
+   * buat file .gitignore
+   * masukkan nama file ke .gitignore
+ 
